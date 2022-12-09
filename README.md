@@ -14,7 +14,7 @@ MIT License:
 
 AtlasApp is a basic texture packing application.
 
-Texture packs (or srite sheets as they are also known) are most often used in 2D games, and are used for both convienience and performance.
+Texture packs (or sprite sheets as they are also known) are most often used in 2D games, and are used for both convienience and performance.
 
 A texture pack consists of two files:
 
