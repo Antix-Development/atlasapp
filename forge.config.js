@@ -4,19 +4,36 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        options: {
+          icon: '/icon/icon.ico'
+        }
+      }
     },
     {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin'],
+      config: {
+        options: {
+          icon: '/icon/icon.icns'
+        }
+      }
     },
     {
       name: '@electron-forge/maker-deb',
-      config: {},
+      config: {
+        options: {
+          icon: '/icon/icon.png'
+        }
+      }
     },
     {
       name: '@electron-forge/maker-rpm',
-      config: {},
+      config: {
+        options: {
+          icon: '/icon/icon.png'
+        }
+      }
     },
   ],
 };

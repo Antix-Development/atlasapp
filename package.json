@@ -1,11 +1,12 @@
 {
-  "name": "atlasapp",
+  "name": "AtlasApp",
   "version": "1.0.0",
   "description": "A basic texture packing application",
   "keywords": [
     "electron",
-    "atlas",
-    "sprite"
+    "texture packer",
+    "texture atlas",
+    "sprite sheet"
   ],
   "author": "Cliff Earl",
   "license": "MIT",
