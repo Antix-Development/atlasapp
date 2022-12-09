@@ -1,0 +1,16 @@
+# Logs
+logs
+*.log
+*.aap
+
+# Dependency directories
+node_modules/
+
+# Archives
+.zip
+
+dist/
+
+out/
+
+png/
