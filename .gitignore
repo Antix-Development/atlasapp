@@ -1,17 +1,10 @@
-# Logs
-logs
 *.log
 *.aap
+*.zip
 
-# Dependency directories
+logs/
 node_modules/
-
-# Archives
-.zip
-
 dist/
-
 out/
-
 png/
 work/
