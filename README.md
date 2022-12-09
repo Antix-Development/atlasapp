@@ -31,7 +31,7 @@ There are many other applications available to pack textures and most of them ar
 
 AtlasApp exists because I require a texture packing application for a project I am currently working on. It is also a test of [Electro](https://github.com/Antix-Development/electro), my Electron template.
 
-If you find AtlasApp useful maybe you will start my repository and maybe you would also consider [buying me a coffee](https://www.buymeacoffee.com/antixdevelu) :)
+If you find AtlasApp useful maybe you will star my repository and maybe you would also consider [buying me a coffee](https://www.buymeacoffee.com/antixdevelu) :)
 
 ---
 
