@@ -1,6 +1,7 @@
 *.log
 *.aap
 *.zip
+*.electro
 
 logs/
 node_modules/

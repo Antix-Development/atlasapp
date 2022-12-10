@@ -1,5 +1,5 @@
 /*
-Electro - A basic JavaScript Electron application template.
+Electro - A basic single page Electron application template.
 Copyright (c) Cliff Earl, Antix Development, 2022.
 MIT License:
 */
