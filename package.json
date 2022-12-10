@@ -1,14 +1,18 @@
 {
   "name": "AtlasApp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A basic texture packing application",
+  "repository": "https://github.com/Antix-Development/atlasapp",
   "keywords": [
     "electron",
-    "texture packer",
-    "texture atlas",
-    "sprite sheet"
+    "texture-packer",
+    "texture-atlas",
+    "sprite-sheet",
+    "electron",
+    "electronjs"
   ],
   "author": "Cliff Earl",
+  "publisher": "Antix Development",
   "license": "MIT",
   "main": "main.js",
   "scripts": {

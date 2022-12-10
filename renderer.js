@@ -119,7 +119,7 @@ createEmptyProject = () => {
   project = {
     id: 'atlasapp',
     path: '',
-    padding: false,
+    padding: 0,
     images: [],
   };
 
@@ -376,14 +376,15 @@ exportProject = () => {
       canvas.width = atlasWidth;
       canvas.height = atlasHeight;
     
-      const padding = project.padding,
+      let padding = project.padding,
       images = project.images;
-    
+
       let descriptors = '';
       for (let i = 0; i < images.length; i++) {
         const image = images[i];
         ctx.drawImage(image.img, image.x + padding, image.y + padding);
-        descriptors += `${image.name}, ${image.x}, ${image.y}, ${image.w}, ${image.h}\n`;
+        descriptors += `${image.name}, ${image.x + padding}, ${image.y + padding}, ${image.w - (padding * 2)}, ${image.h - (padding * 2)}\n`;
+        // console.log(`${image.name}, ${image.x + padding}, ${image.y + padding}, ${image.w - (padding * 2)}, ${image.h - (padding * 2)}`);
       }
       const dataURL = canvas.toDataURL();
     
@@ -419,6 +420,17 @@ selectNoImages = () => {
       project.images[i].li.classList.remove('selected');
     }
   }
+},
+
+// Display the about dialog
+about = () => {
+  let i = electro.getAppInfo();
+  electro.dialog({
+    title: 'About',
+    body: `${i.name} version ${i.version}.<br>${i.description}.<br>Copyright (c) 2022 ${i.author}, ${i.publisher}.<br><br><a target="_blank" href="${i.repository}">Visit ${i.name} website</a><br><a target="_blank" href="https://www.buymeacoffee.com/antixdevelu">Buy ${i.author.split(' ')[0]} a Coffee</a>`,
+    singleButton: true,
+    yesText: 'Okay',
+  });
 },
 
 // Menus
@@ -518,14 +530,7 @@ menus = [
         label: 'About',
         key: 'F1',
         comboKeys: electro.TYPE_NONE,
-        click: () => {
-          electro.dialog({
-            title: 'About',
-            body: 'AtlasApp version 1.0.<br>A basic texture packing application.<br>Copyright (c) 2022 Cliff Earl, Antix Development.<br><br><a target="_blank" href="https://github.com/Antix-Development/AtlasApp">Visit AtlasApp website</a><br><a target="_blank" href="https://www.buymeacoffee.com/antixdevelu">Buy Cliff a Coffee</a>',
-            singleButton: true,
-            yesText: 'Okay',
-          });
-        },
+        click: about,
       },
     ]
   },
