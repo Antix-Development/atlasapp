@@ -7,5 +7,6 @@ logs/
 node_modules/
 dist/
 out/
+
 png/
 work/
